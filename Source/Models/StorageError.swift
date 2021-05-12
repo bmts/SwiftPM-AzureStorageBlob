@@ -43,6 +43,11 @@ public final class StorageError: XMLModel {
         self.code = code
         self.message = message
     }
+    
+    enum CodingKeys: String, CodingKey {
+        case code = "code"
+        case message = "message"
+    }
 
     // MARK: XMLModel Delegate
 
